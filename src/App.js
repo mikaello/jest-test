@@ -8,7 +8,9 @@ export const ListOfCrackers = ({ crackerList }) => (
   <div>
     <h4>Bøllene her på huset er:</h4>
     <ul>
-      {crackerList.map((cracker, index) => <li key={index}>{cracker}</li>)}
+      {crackerList.length > 0
+        ? crackerList.map((cracker, index) => <li key={index}>{cracker}</li>)
+        : 'Ingen bøller :-('}
     </ul>
   </div>
 )
@@ -49,8 +51,7 @@ class App extends Component {
           onChange={boss => this.props.anotherBossPlease(boss.target.value)}
         />
 
-        {this.props.bottleCrackers.length > 0 &&
-          <ListOfCrackers crackerList={this.props.bottleCrackers} />}
+        <ListOfCrackers crackerList={this.props.bottleCrackers} />
 
         {this.addCracker()}
 
