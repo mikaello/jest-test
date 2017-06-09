@@ -1,12 +1,16 @@
 # Jest tester
 
-En bitteliten workshop for [Jest](https://facebook.github.io/jest/docs/expect.html#expectarraycontainingarray)
+En bitteliten workshop med tema Jest-tester
+
+Nyttige lenker for oppgavene:
+* [Jest API globals](https://facebook.github.io/jest/docs/en/api.html#content) (f.eks. `describe()` og `test()`)
+* [Jest API expect](https://facebook.github.io/jest/docs/en/expect.html) (f.eks. `toBe()` og `toEqual()`)
 
 ### Oppgave 1: Hvordan kjøre testene
 Kjør testene som allerede er skrevet. Hint: `npm test`
 
 ### Oppgave 2: Skriv din egen enhetstest
-Funksjonen `addTwoIntegers(number, number)` i fila `usitLogic.js` skal vistnok legge sammen to heltall, men dette er det ingen som vet helt sikkert. Åpne fila `__test__/oppgave2_usitLogic.test.js` og skriv ferdig en test som sjekker at denne faktisk legger sammen to heltall og får korrekt utputt.
+Funksjonen `addTwoIntegers(number, number)` i fila `usitLogic.js` skal vistnok legge sammen to heltall, men dette er det ingen som vet helt sikkert. Åpne fila `__test__/oppgave2_usitLogic.test.js` og skriv ferdig testene som sjekker at denne faktisk legger sammen to heltall og får korrekt utputt.
 
 Følg med i terminalvinduet som du brukte i _Oppgave 1_ for å se at testene kjører.
 
@@ -20,7 +24,7 @@ Din jobb i denne oppgaven er å endre funksjonen `capitalizeUSIT(string)` i `usi
 
 ### Oppgave 4: Testing av redux reducer
 
-I `__tests__/oppgave4_usitReducer.test.js` er det implementert en test av en av actionene i `usitReducer`, se gjerne på denne, og følg instruksjonene for `'BLAME_CRACKER'`-actionen.
+I `__tests__/oppgave4_usitReducer.test.js` er det implementert en test av en av actionene i `usitReducer`, ta en rask titt på denne, og følg instruksjonene for å skrive en test av `'BLAME_CRACKER'`-actionen.
 
 
 ### Oppgave 5: Snapshot-testing
@@ -29,4 +33,4 @@ Det er på forhånd laget et snapshot av hele appen, dette kan du se i fila `__t
 
 Gå nå inn i `App.js` og endre på teksten i overskriften til `ListOfCrackers`-komponenten (øverst). Se hvordan testene i terminalen oppfører seg nå, oppdater eventuelt snapshotet med en ny versjon.
 
-Hvorfor kan slik snapshot-testing være nyttig?
+I hvilke tilfeller kan slik snapshot-testing være nyttig?
